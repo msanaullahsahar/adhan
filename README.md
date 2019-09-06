@@ -42,7 +42,7 @@ addr-gen-mode=stable-privacy
 method=auto
 ```
 
-**[u]Now set up your Google Home Speaker (google home mini) before proceeding if your google home mini is not already connected to your network.[/u]**
+**Now set up your Google Home Speaker (google home mini) before proceeding if your google home mini is not already connected to your network.**
 
 5. Remove the SD card from PC, put it in Raspberry-Pi and power-on you raspberry-pi. Wait for a couple of minutes (in my case I waited for 10 minutes) and then visit your router homepage. For example, my router homepage can be accessible at **192.168.0.1**. The address of your router may be different. Since every router has a different setup, unfortunately, I can not provide much detail on this. Find the IP address of your Raspberry-Pi on your router homepage and note it somewhere. Then create a port forwarding rule and associate port **8123** with the IP address of your raspberry-Pi.
 
@@ -169,10 +169,8 @@ You need to replace values at **Four** such places in code below.
 >On this card, you will see **Adhan** and **Fajr Adhan**. Click on **Adhan** and then click on **TRIGGER**. Wait a minute and if you hear adhan from your *google home mini* that's mean everything is successfully setup.
 
 <div align="center">
-Hurrah !!! You have made it.
+Hurrah !!! You have made it. Now please remember me in your prayers.
 </div>
-
-> I am happy and kind enough to provide my services to set adhan **free** only for the **sake of ALLAH** on your raspberry-Pi/google home mini if you connect to me via Teamviewer. Remember me in your prayers.
 
 <div align="center">
 جزاک اللہ
