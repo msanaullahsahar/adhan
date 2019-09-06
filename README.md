@@ -1,6 +1,6 @@
 # Adhan Automation. Prayer calls using Home Assistant and Google Home Mini
 
-This guide is written especially for newbies who have just a google-home-mini and are trying to make it call for adhan. A lot of people have already done this and thanks goes to @porankazi for his efforts. However even reading all posts on this forum related to adhan automation, I honestly admit that I remained unable to follow instruction and couldn't get any success. I watched a lot of tutorials on Home Assistant and made myself familiarize with HassIO platform. By doing so I got to a point where I can install HassIO platform on my Raspberry Pi Zero W and automate adhan using my google home mini.
+This guide is written especially for newbies who have just a google-home-mini and are trying to make it call for adhan. A lot of people have already done this, however even reading all posts on the internet related to adhan automation, I honestly admit that I remained unable to follow instruction and couldn't get any success. I watched a lot of tutorials on Home Assistant and made myself familiarize with HassIO platform. By doing so I got to a point where I can install HassIO platform on my Raspberry Pi Zero W and automate adhan using my google home mini.
 
 > To follow this tutorial, you must have;
 
