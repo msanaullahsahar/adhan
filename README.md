@@ -114,7 +114,7 @@ Caution: In the code below, against **entity_id**, don't forget to replace **sah
 
 > Setting **automation.yaml** file
 
-You need to replace values at **Four** such places in code below.
+You need to replace values at **TWO** such places in code below.
 
 ```
 # Automation for Dhuhr, Asr, Maghrib, and Isha Adhan
@@ -134,6 +134,8 @@ You need to replace values at **Four** such places in code below.
   id: '1517693010922'
   trigger:
     - platform: template
+      value_template: '{{ as_timestamp(strptime(states("sensor.time_date"), "%H:%M, %Y-%m-%d")) == as_timestamp(strptime(states("sensor.islamic_prayer_time_fajr"), "%Y-%m-%dT%H:%M:%S")) }}'
+    - platform: template
       value_template: '{{ as_timestamp(strptime(states("sensor.time_date"), "%H:%M, %Y-%m-%d")) == as_timestamp(strptime(states("sensor.islamic_prayer_time_dhuhr"), "%Y-%m-%dT%H:%M:%S")) }}'
     - platform: template
       value_template: '{{ as_timestamp(strptime(states("sensor.time_date"), "%H:%M, %Y-%m-%d")) == as_timestamp(strptime(states("sensor.islamic_prayer_time_asr"), "%Y-%m-%dT%H:%M:%S")) }}'
@@ -141,24 +143,6 @@ You need to replace values at **Four** such places in code below.
       value_template: '{{ as_timestamp(strptime(states("sensor.time_date"), "%H:%M, %Y-%m-%d")) == as_timestamp(strptime(states("sensor.islamic_prayer_time_maghrib"), "%Y-%m-%dT%H:%M:%S")) }}'
     - platform: template
       value_template: '{{ as_timestamp(strptime(states("sensor.time_date"), "%H:%M, %Y-%m-%d")) == as_timestamp(strptime(states("sensor.islamic_prayer_time_isha"), "%Y-%m-%dT%H:%M:%S")) }}'
-# Separate Automation for Fajr Adhan
-- action:
-  - alias: ''
-    data:
-      entity_id: media_player.sahar_google_mini
-      media_content_id: https://www.islamcan.com/audio/adhan/azan5.mp3
-      media_content_type: audio/mp3
-    service: media_extractor.play_media
-  - data:
-      entity_id: media_player.sahar_google_mini
-      volume_level: '0.8'
-    service: media_player.volume_set
-  alias: Fajr Adhan
-  condition: []
-  id: '1517694139112'
-  trigger:
-  - platform: template
-    value_template: '{{ as_timestamp(strptime(states("sensor.time_date"), "%H:%M, %Y-%m-%d")) == as_timestamp(strptime(states("sensor.islamic_prayer_time_fajr"), "%Y-%m-%dT%H:%M:%S")) }}'
 ```
 
 12. Save the file by clicking on the **floppy drive icon** on the top blue bar and then close it by clicking **X** icon.
@@ -169,9 +153,5 @@ You need to replace values at **Four** such places in code below.
 >On this card, you will see **Adhan** and **Fajr Adhan**. Click on **Adhan** and then click on **TRIGGER**. Wait a minute and if you hear adhan from your *google home mini* that's mean everything is successfully setup.
 
 <div align="center">
-Hurrah !!! You have made it. Now please remember me in your prayers.
-</div>
-
-<div align="center">
-جزاک اللہ
+Hurrah !!! You have made it. Now please remember me in your prayers. جزاک اللہ
 </div>
