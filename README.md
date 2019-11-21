@@ -80,20 +80,15 @@ sensor:
       - 'time'
       - 'date'
       - 'date_time'
-      - 'date_time_iso'
       - 'time_date'
-      - 'time_utc'
-      - 'beat'
   - platform: islamic_prayer_times
     calculation_method: mwl
     sensors:
       - fajr
-      - sunrise
       - dhuhr
       - asr
       - maghrib
       - isha
-      - midnight
 
 # Text to speech
 tts:
