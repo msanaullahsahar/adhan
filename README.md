@@ -166,4 +166,4 @@ title: Prayer Times
 # Caution:
 In `automation.yaml` file, do not forget to change **entity_id**, matching with your Google Home Mini/Nest/Speaker ID.
 
-Last Updated: [date=2024-10-22 time=22:24:00 timezone="Asia/Karachi"]
+Last Updated: [date=2025-07-05 time=22:24:00 timezone="Asia/Karachi"]
